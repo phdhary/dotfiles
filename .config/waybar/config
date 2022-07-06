@@ -1,0 +1,45 @@
+// vim: set ft=json:
+{
+    "layer": "top",
+    "spacing": 14,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "bluetooth","network", "battery", "custom/powermenu"],
+    "sway/mode":{
+      "format": "  {}",
+      "tooltip": false
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true
+    },
+    "sway/window": {
+        "max-length": 50,
+        "tooltip": false
+    },
+    "bluetooth": {
+      "on-click": "blutrofi"
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "network": {
+        "format-wifi": "  {essid}",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠",
+        "tooltip-format": "Strength: {signalStrength}%",
+        "on-click": "netrofi"
+    },
+    "battery": {
+        "format": "{icon}  {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d %b  %H:%M}"
+    },
+    "custom/powermenu": {
+        "format": "",
+        "on-click": "rofi -show power-menu -modi power-menu:~/Downloads/cloned/powrofi/powrofi",
+        "tooltip": false
+    }
+}

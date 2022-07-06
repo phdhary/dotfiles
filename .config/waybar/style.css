@@ -1,0 +1,158 @@
+@define-color base_color rgb(30, 30, 46);
+@define-color text_color rgb(205, 214, 244);
+@define-color mauve rgb(203, 166, 247);
+@define-color pink rgb(245, 194, 231);
+@define-color blue rgb(137, 180, 250);
+@define-color lavender rgb(180, 190, 254);
+@define-color red rgb(243, 139, 168);
+@define-color green rgb(166, 227, 161);
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 16px;
+    min-height: 0;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+#window {
+  background-color: @base_color;
+  color: @mauve;
+  border-radius: 26px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+window#waybar {
+  background: rgba(30, 30, 46, 0.0);
+  color: @mauve;
+}
+
+window#waybar.empty {
+  background: rgba(30, 30, 46, 0.0);
+  color: @mauve;
+}
+
+tooltip {
+  background-color: @base_color;
+  border-radius: 16px;
+} 
+
+tooltip label {
+  color: @mauve;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: @text_color;
+    border-radius: 26px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#workspaces button.focused {
+    background: @base_color;
+    color: @pink;
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#mode {
+    background-color: @base_color;
+    color: @pink;
+    border-radius: 26px;
+}
+
+#bluetooth {
+    background-color: @base_color;
+    color: @blue;
+    border-radius: 26px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#backlight {
+    background-color: @base_color;
+    color: @mauve;
+    border-radius: 26px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#pulseaudio {
+    background-color: @base_color;
+    color: @mauve;
+    border-radius: 26px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#tray {
+    background-color: @base_color;
+    border-radius: 26px;
+    color: @mauve;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#network {
+    background-color: @base_color;
+    color: @lavender;
+    border-radius: 26px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#network.disconnected {
+    background: @red;
+    color: @text_color;
+}
+
+#battery {
+    background-color: @base_color;
+    color: @green;
+    border-radius: 26px;
+}
+
+#battery.charging {
+    color: #11111B; 
+    background-color: @green;
+}
+
+@keyframes blink {
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: @red;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#clock {
+    background-color: @base_color;
+    color: @pink;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 26px;
+}
+
+#custom-powermenu {
+    background-color: @base_color;
+    color: @red;
+    padding-left: 14px;
+    padding-right: 18px;
+    border-radius: 26px;
+}
