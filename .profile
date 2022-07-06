@@ -30,7 +30,7 @@ alias nivm="nvim"
 alias ranger=". ranger"
 alias rm="rm -i"
 alias svim="sudo -e"
-alias lazygitdot="lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias dotlg="lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 # }}}
 # LS COLORS {{{
 if [[ `echo $TERM` == 'xterm-kitty' ]]; then

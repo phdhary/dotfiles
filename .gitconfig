@@ -4,4 +4,4 @@
 [core]
 	autocrlf = input
 [alias]
-	dtf = !git --git-dir=$HOME/.dotfiles --work-tree=$HOME
+	dot = !git --git-dir=$HOME/.dotfiles --work-tree=$HOME
