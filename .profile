@@ -18,7 +18,6 @@ fi
 export EDITOR=nvim
 export FREETYPE_PROPERTIES="cff:no-stem-darkening=0"
 export FVM_HOME="$HOME/development/fvm"
-export MAMAMIA="LEZATOS"
 export NEOVIDE_FRAMELESS=true
 export NEOVIDE_MULTIGRID=true
 export PAGER=bat
