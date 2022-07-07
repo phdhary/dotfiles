@@ -5,7 +5,7 @@ if [ `whoami` != 'root' ] ; then
     export PATH="$PATH":"$HOME/.cargo/bin"
     export PATH="$PATH":"$HOME/.pub-cache/bin"
     export PATH="$PATH":"$HOME/Android/Sdk/platform-tools"
-    export PATH="$PATH":"$HOME/Downloads/cloned/neovide/neovide/target/release"
+    export PATH="$PATH":"$HOME/Downloads/Cloned/neovide/neovide/target/release"
     export PATH="$PATH":"$HOME/development/OpenShift"
     export PATH="$PATH":"$HOME/development/fvm/default/bin"
 fi
