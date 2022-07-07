@@ -1,7 +1,0 @@
-[user]
-	email = REDACTED
-	name = REDACTEDD
-[core]
-	autocrlf = input
-[alias]
-	dot = !git --git-dir=$HOME/.dotfiles --work-tree=$HOME
