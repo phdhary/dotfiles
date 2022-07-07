@@ -28,4 +28,4 @@ git clone --bare https://github.com/phdhary/dotfiles.git $HOME/.dotfiles
 ```
 git dot checkout -f
 ```
-[Article I read to manage dotfiles](https://dev.to/bowmanjd/store-home-directory-config-files-dotfiles-in-git-using-bash-zsh-or-powershell-the-bare-repo-approach-35l3) 
+[Article](https://dev.to/bowmanjd/store-home-directory-config-files-dotfiles-in-git-using-bash-zsh-or-powershell-the-bare-repo-approach-35l3) I read to manage dotfiles
