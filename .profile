@@ -25,11 +25,16 @@ export SYSTEMD_EDITOR=nvim
 # }}}
 # ALIASES {{{
 alias dlmp3pl='yt-dlp -f bestaudio -x --audio-format mp3 --audio-quality 320k --embed-thumbnail --add-metadata --postprocessor-args "-id3v2_version 3"'
+alias nimv="nvim"
 alias nivm="nvim"
+alias nmiv="nvim"
+alias nmvi="nvim"
 alias ranger=". ranger"
 alias rm="rm -i"
 alias svim="sudo -e"
-alias dotlg="lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+if [[ `whoami` != "root" ]]; then
+    alias dotlg="lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+fi
 # }}}
 # LS COLORS {{{
 if [[ `echo $TERM` == 'xterm-kitty' ]]; then
