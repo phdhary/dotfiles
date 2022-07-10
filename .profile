@@ -3,6 +3,7 @@
 export PATH="$PATH":"$HOME/.local/bin"
 if [ `whoami` != 'root' ] ; then
     export PATH="$PATH":"$HOME/.cargo/bin"
+    export PATH="$PATH":"$HOME/go/bin"
     export PATH="$PATH":"$HOME/.pub-cache/bin"
     export PATH="$PATH":"$HOME/Android/Sdk/platform-tools"
     export PATH="$PATH":"$HOME/Downloads/Cloned/neovide/neovide/target/release"
