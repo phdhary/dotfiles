@@ -4,7 +4,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
@@ -77,7 +77,7 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # }}}
-# Linux Brew Completions {{{ 
+# Linux Brew Completions {{{
 # if type brew &>/dev/null
 # then
 #   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
@@ -92,18 +92,21 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( dnf 
-          oc 
-          gh 
-          zsh-autosuggestions 
-          zsh-kitty 
-          npm 
-          nvm 
-          node
-          fvm
-          docker
-          docker-compose
-        )
+plugins=(
+    dnf
+    docker
+    docker-compose
+    fvm
+    gh
+    node
+    npm
+    nvm
+    oc
+    rust
+    zsh-autosuggestions
+    zsh-kitty
+    # zsh-vi-mode
+)
 source $ZSH/oh-my-zsh.sh
 __kitty_complete
 # }}}
@@ -129,8 +132,8 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # }}}
 # FZF & RipGrep {{{
 if type rg &> /dev/null; then
-  export FZF_DEFAULT_COMMAND='rg --files'
-  export FZF_DEFAULT_OPTS='-m --color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
+    export FZF_DEFAULT_COMMAND='rg --files'
+    export FZF_DEFAULT_OPTS='-m --color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
 fi
 # }}}
 # NVM {{{

@@ -1,7 +1,0 @@
-# vim:ft=sh
-rm -rf $HOME/.config/nvim;
-rm -rf $HOME/.local/share/nvim;
-rm -rf $HOME/.cache/nvim;
-git clone https://github.com/NvChad/NvChad $HOME/.config/nvim --depth 1;
-git clone https://github.com/phdhary/nv-config.git $HOME/.config/nvim/lua/custom --depth 1;
-nvim;

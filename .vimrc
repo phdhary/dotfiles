@@ -8,7 +8,7 @@ set nocompatible
 set shortmess+=atI
 set laststatus=2
 set timeoutlen=500
-set undofile
+set noundofile
 set nobackup
 set magic
 set noerrorbells
