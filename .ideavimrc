@@ -1,6 +1,6 @@
 let mapleader=" "
 
-" Plugins
+" -- Plugins --
 set NERDTree
 set commentary
 set highlightedyank
@@ -8,7 +8,7 @@ set matchit
 set sneak
 set surround
 set vim-paragraph-motion
-" Settings
+" -- Settings --
 set clipboard+=ideaput
 set clipboard+=unnamed
 set hls
@@ -21,31 +21,29 @@ set showmode
 set smartcase
 set visualbell
 set wrapscan
-" Mappings
-" Don't use Ex mode, use Q for formatting.
-map Q           gq
-
+" -- Mappings --
+imap <C-b>      <Esc>^i
+imap <C-e>      <End>
 imap <C-h>      <Left>
 imap <C-l>      <Right>
 imap <C-j>      <Down>
 imap <C-k>      <Up>
-
-" Window movement
+" - Window movement
 map <C-h>       <C-w>h
 map <C-l>       <C-w>l
 map <C-j>       <C-w>j
 map <C-k>       <C-w>k
-
-" General Things
+" - General Things
+map <Esc>       :nohlsearch<CR>
 map <C-n>       :NERDTreeToggle<CR>
+map <C-c>       :%y+<CR>
 map <TAB>       :bnext<CR>
 map <S-TAB>     :bprev<CR>
 map <leader>x   :bd<CR>
 map <leader>n   :set nu!<CR>
 map <leader>rn  :set rnu!<CR>
-
-" -- Intellij Actions --
-" Nice to have
+" - Intellij Actions
+"   > Nice to have
 map <leader>zn  <Action>(ToggleDistractionFreeMode)
 map <leader>ff  <Action>(GotoFile)
 map <leader>fm  <Action>(ReformatCode)
@@ -57,15 +55,13 @@ map <leader>ae  <Action>(AvailableDevices)
 map <leader>fu  <Action>(FindUsages)
 map <leader>su  <Action>(ShowUsages)
 map <leader>ga  <Action>(GotoAction)
-
-" Show Tool Window
+"   > Show Tool Window
 map <leader>lc  <Action>(ActivateLogcatToolWindow)
 map <leader>sh  <Action>(ActivateTerminalToolWindow)
 map <leader>db  <Action>(ActivateDebugToolWindow)
 map <leader>gg  <Action>(ActivateVersionControlToolWindow)
 map <leader>ad  <Action>(ActivateDeviceManagerToolWindow)
-
-" Refactorings
+"   > Refactorings
 map <leader>R   <Action>(Refactorings.QuickListPopupAction)
 map <leader>ri  <Action>(Inline)
 map <leader>rn  <Action>(RenameElement)
@@ -73,8 +69,7 @@ map <leader>rf  <Action>(RenameFile)
 map <leader>rv  <Action>(IntroduceVariable)
 map <leader>rs  <Action>(ExtractSuperclass)
 map <leader>ri  <Action>(Inline)
-
-" Execution
+"   > Execution
 map <leader>rr  <Action>(Run)
 map <leader>dd  <Action>(Debug)
 map <leader>cc  <Action>(CleanGradleProject)
