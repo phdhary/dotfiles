@@ -61,6 +61,7 @@ map <leader>sh  <Action>(ActivateTerminalToolWindow)
 map <leader>db  <Action>(ActivateDebugToolWindow)
 map <leader>gg  <Action>(ActivateVersionControlToolWindow)
 map <leader>ad  <Action>(ActivateDeviceManagerToolWindow)
+map <leader>pr  <Action>(ActivateProblemsViewToolWindow)
 "   > Refactorings
 map <leader>R   <Action>(Refactorings.QuickListPopupAction)
 map <leader>ri  <Action>(Inline)
