@@ -130,12 +130,6 @@ setopt nonomatch
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # }}}
-# FZF & RipGrep {{{
-if type rg &> /dev/null; then
-    export FZF_DEFAULT_COMMAND='rg --files'
-    export FZF_DEFAULT_OPTS='-m --color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD'
-fi
-# }}}
 # NVM {{{
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
